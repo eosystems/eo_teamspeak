@@ -7,7 +7,7 @@ services:
     volumes:
       - teamspeak_volume:/teamspeak3
     ports:
-      - "9987:9987"
+      - "0.0.0.0:9987:9987/udp"
       - "30033:30033"
       - "10011:10011"
       - "41144:41144"
