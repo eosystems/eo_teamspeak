@@ -2,7 +2,8 @@ version: '2'
 services:
   teamspeak:
     tty: true
-    image: mbentley/teamspeak
+    image: eosystems/teamspeak
+    build: build/teamspeak
     volumes:
       - teamspeak_volume:/data
     ports:
