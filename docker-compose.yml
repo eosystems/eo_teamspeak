@@ -1,0 +1,14 @@
+version: '2'
+services:
+  teamspeak:
+    tty: true
+    image: mbentley/teamspeak
+    volumes:
+      - teamspeak_volume:/data
+    ports:
+      - "13506:3306"
+    container_name: teamspeak
+
+volumes:
+  teamspeak_volume:
+    driver: local
