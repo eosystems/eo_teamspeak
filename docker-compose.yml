@@ -5,7 +5,7 @@ services:
     image: eosystems/teamspeak
     build: build/teamspeak
     volumes:
-      - teamspeak_volume:/data
+      - teamspeak_volume:/teamspeak3
     ports:
       - "9987:9987"
       - "30033:30033"
